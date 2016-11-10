@@ -1,0 +1,165 @@
+<h1>Welcome To my 8-bit Counter!</h1>
+<p>Modeled using only nand gates</p>
+
+<table>
+<tr>
+  <div class="addeeRadioes">
+    <td></td>
+    <td>7</td>
+    <td>6</td>
+    <td>5</td>
+    <td>4</td>
+    <td>3</td>
+    <td>2</td>
+    <td>1</td>
+    <td>0</td>
+  </div>
+  
+  <td></td>
+
+  <div class="addeeRadioes">
+    <td>7</td>
+    <td>6</td>
+    <td>5</td>
+    <td>4</td>
+    <td>3</td>
+    <td>2</td>
+    <td>1</td>
+    <td>0</td>
+  </div>
+</tr>
+
+  <tr>
+    <td>
+      <p>1</p>
+      <p>0</p>
+    </td>
+    
+    <%= form_for :welcome, url: '/welcome/create', :html => {:class => 'input_form'} do |f| %>
+    <td>
+      <%= f.radio_button :adderBit0, 1, class: "radio"%><br>
+      <%= f.radio_button :adderBit0, 0 %>
+    </td>
+    <td>
+      <%= f.radio_button :adderBit1, 1 %><br>
+      <%= f.radio_button :adderBit1, 0 %>
+    </td> 
+    <td>
+      <%= f.radio_button :adderBit2, 1 %><br>
+      <%= f.radio_button :adderBit2, 0 %>
+    </td> 
+    <td>
+      <%= f.radio_button :adderBit3, 1 %><br>
+      <%= f.radio_button :adderBit3, 0 %>
+    </td> 
+    <td>
+      <%= f.radio_button :adderBit4, 1 %><br>
+      <%= f.radio_button :adderBit4, 0 %>
+    </td> 
+    <td>
+      <%= f.radio_button :adderBit5, 1 %><br>
+      <%= f.radio_button :adderBit5, 0 %>
+    </td> 
+    <td>
+      <%= f.radio_button :adderBit6, 1 %><br>
+      <%= f.radio_button :adderBit6, 0 %>
+    </td>
+    <td>
+      <%= f.radio_button :adderBit7, 1 %><br>
+      <%= f.radio_button :adderBit7, 0 %>
+    </td>
+
+    <td>+</td>
+
+    <td>
+      <%= f.radio_button :addeeBit0, 1, class: "radio"%><br>
+      <%= f.radio_button :addeeBit0, 0 %>
+    </td>
+    <td>
+      <%= f.radio_button :addeeBit1, 1 %><br>
+      <%= f.radio_button :addeeBit1, 0 %>
+    </td> 
+    <td>
+      <%= f.radio_button :addeeBit2, 1 %><br>
+      <%= f.radio_button :addeeBit2, 0 %>
+    </td> 
+    <td>
+      <%= f.radio_button :addeeBit3, 1 %><br>
+      <%= f.radio_button :addeeBit3, 0 %>
+    </td> 
+    <td>
+      <%= f.radio_button :addeeBit4, 1 %><br>
+      <%= f.radio_button :addeeBit4, 0 %>
+    </td> 
+    <td>
+      <%= f.radio_button :addeeBit5, 1 %><br>
+      <%= f.radio_button :addeeBit5, 0 %>
+    </td> 
+    <td>
+      <%= f.radio_button :addeeBit6, 1 %><br>
+      <%= f.radio_button :addeeBit6, 0 %>
+    </td>
+    <td>
+      <%= f.radio_button :addeeBit7, 1 %><br>
+      <%= f.radio_button :addeeBit7, 0 %>
+    </td>
+    <td>
+      <%= f.submit class: 'enter_btn'%>
+    </td>
+  <% end %>
+    
+    </td>
+  </tr>
+</table>
+
+
+
+
+<table>
+  <tr>
+    <td>Carry In</td>
+    <td>Input A</td>
+    <td>Input B</td> 
+  </tr>
+  <tr>
+    <td class="c-in"><%= byte_counter[:c_in] %></td>
+    <td class="input_a"><%= byte_counter[:input_a] %></td>
+    <td class="input_b"><%= byte_counter[:input_b] %></td>    
+  </tr>
+</table><br>
+
+<table>
+  <tr>
+    <td>Math Problem</td>
+  </tr>
+  <tr>
+    <td class="math_problem"><%= byte_counter[:math_problem] %></td>
+  </tr>
+</table><br>
+
+<table>
+  <tr>
+    <td>Answer</td>
+  </tr>
+  <tr>
+    <td>Binary:</td>
+    <td>Numerical:</td>
+  </tr>
+  <tr>
+    <td class="binary_output"><%= byte_counter[:output] %></td>
+    <td class="num_output"><%= byte_counter[:num_output] %></td>
+  </tr>
+</table>
+
+<canvas id="myCanvas" width="8400" height="600"></canvas>
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="tab" role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li class="tab" role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li class="tab" role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li class="tab" role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+</div>
