@@ -1,2 +1,2 @@
 # bit-counter
-![Alt text](/app/assets/images/full-adder-nand.png)
+![Alt text](app/assets/images/full-adder-nand.png)
