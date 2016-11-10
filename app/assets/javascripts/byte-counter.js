@@ -7,14 +7,14 @@ $(document).ready(function() {
 
   }
    var sources = [
-    'https://raw.githubusercontent.com/kromitj/images/master/000.png',
-    'https://raw.githubusercontent.com/kromitj/images/master/001.png',
-    'https://raw.githubusercontent.com/kromitj/images/master/002.png',
-    'https://raw.githubusercontent.com/kromitj/images/master/003.png',
-    'https://raw.githubusercontent.com/kromitj/images/master/001.png',
-    'https://raw.githubusercontent.com/kromitj/images/master/001.png',
-    'https://raw.githubusercontent.com/kromitj/images/master/002.png',
-    'https://raw.githubusercontent.com/kromitj/images/master/003.png',
+    'https://raw.githubusercontent.com/kromitj/images/master/011.png',
+    'https://raw.githubusercontent.com/kromitj/images/master/011.png',
+    'https://raw.githubusercontent.com/kromitj/images/master/011.png',
+    'https://raw.githubusercontent.com/kromitj/images/master/011.png',
+    'https://raw.githubusercontent.com/kromitj/images/master/011.png',
+    'https://raw.githubusercontent.com/kromitj/images/master/011.png',
+    'https://raw.githubusercontent.com/kromitj/images/master/011.png',
+    'https://raw.githubusercontent.com/kromitj/images/master/011.png',
   ];
   images = loadImages2(sources);
 
